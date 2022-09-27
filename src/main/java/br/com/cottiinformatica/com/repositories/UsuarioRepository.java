@@ -22,6 +22,19 @@ public class UsuarioRepository {
 		connection.close();
 	}
 	
+	public void update(Integer idUsuario, String novaSenha) throws Exception{
+		
+		Connection connection = ConnectionFactory.createConnection();
+		
+		PreparedStatement statement = connection.prepareStatement("UPDATE usuario SET senha = md5(?) WHERE idusuario = ?");
+		statement.setString(1, novaSenha);
+		statement.setInt(2, idUsuario);
+		statement.execute();
+		
+		connection.close();
+	}
+	
+	
 	public Usuario findByEmail(String email) throws Exception{
 		
 		Connection connection = ConnectionFactory.createConnection();

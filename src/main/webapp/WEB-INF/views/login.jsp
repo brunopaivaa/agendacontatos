@@ -31,7 +31,7 @@
 							<hr/>
 						</div>
 						
-						<form id="form_login" method="post" action="login-user">
+						<form id="form_login" action="login-user"  method="post" >
 							
 							<div class="mb-3">
 								<label>Email de acesso:</label>
