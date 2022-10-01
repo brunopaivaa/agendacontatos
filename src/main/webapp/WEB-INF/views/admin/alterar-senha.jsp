@@ -6,7 +6,7 @@
 
 <meta charset="UTF-8">
 
-<title>Acessar Conta</title>
+<title>Alterar Senha</title>
 
 <!-- link para os arquivos de extensão .CSS -->
 <link rel="stylesheet" href="../resources/css/bootstrap.min.css"
@@ -18,17 +18,18 @@
 	<jsp:include page="/WEB-INF/views/components/navbar.jsp"></jsp:include>
 
 	<div class="container mt-4">
-		<h3>Seja bem vindo a agenda de contatos</h3>
-		<hr/>
-		
+		<h3>Alterar Senha</h3>
+		<p>Preencha os campos para modificar sua senha de acesso.</p>
+		<hr />
+
 		<p>
 			Nome do usuário: <strong>${usuario_auth.nome}</strong>
 		</p>
-		
+
 		<p>
 			Email de acesso: <strong>${usuario_auth.email}</strong>
 		</p>
-		
+
 	</div>
 
 	<!-- link para os arquivos de extensão JS -->

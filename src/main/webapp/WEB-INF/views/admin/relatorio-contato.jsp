@@ -6,7 +6,7 @@
 
 <meta charset="UTF-8">
 
-<title>Acessar Conta</title>
+<title>Relatório de Contatos</title>
 
 <!-- link para os arquivos de extensão .CSS -->
 <link rel="stylesheet" href="../resources/css/bootstrap.min.css"
@@ -15,20 +15,15 @@
 </head>
 <body>
 
+	<!-- barra de menu superior do sistema -->
 	<jsp:include page="/WEB-INF/views/components/navbar.jsp"></jsp:include>
 
 	<div class="container mt-4">
-		<h3>Seja bem vindo a agenda de contatos</h3>
-		<hr/>
-		
-		<p>
-			Nome do usuário: <strong>${usuario_auth.nome}</strong>
-		</p>
-		
-		<p>
-			Email de acesso: <strong>${usuario_auth.email}</strong>
-		</p>
-		
+
+		<h3>Relatorio de Contatos</h3>
+		<p>Utilize o formulário para gerar um relatório.</p>
+		<hr />
+
 	</div>
 
 	<!-- link para os arquivos de extensão JS -->
@@ -37,3 +32,4 @@
 
 </body>
 </html>
+
